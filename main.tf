@@ -8,7 +8,7 @@ resource "aws_acm_certificate" "main" {
   }
 
   lifecycle {
-    create_before_destroy =  true
+    create_before_destroy = true
   }
 }
 
