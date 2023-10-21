@@ -4,11 +4,11 @@ resource "aws_acm_certificate" "main" {
   validation_method         = "DNS"
 
   tags = {
-    Environment = "${var.project}-${var.environment}"
+    Environment = "${var.project}-${var.environment}"/
   }
 
   lifecycle {
-    create_before_destroy = true
+    create_before_destroy =  true
   }
 }
 
