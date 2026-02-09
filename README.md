@@ -25,6 +25,7 @@ This Terraform module provisions an AWS ACM (Amazon Certificate Manager) certifi
 | environment | Environment name               | string  | -       |   yes    |
 | domain      | Domain for the certificate      | string  | -       |   yes    |
 | wildcard    | Create wildcard certificate    | bool    | false   |    no    |
+| tags        | tags                           | `map(string)` | -       |    no    |
 
 ## Outputs
 
