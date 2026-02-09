@@ -9,13 +9,13 @@ This Terraform module provisions an AWS ACM (Amazon Certificate Manager) certifi
 | Name      | Version   |
 |-----------|-----------|
 | terraform | >= 1.3.0  |
-| aws       | >= 4.0    |
+| aws       | >= 6.0    |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| aws  | >= 4.0  |
+| aws  | >= 6.0  |
 
 ## Inputs
 
@@ -41,7 +41,7 @@ This example demonstrates how to use the module to create an ACM certificate wit
 ```hcl
 module "acm_certificate" {
   source      = "github.com/opstimus/terraform-aws-acm?ref=v<RELEASE>"
-  
+
   project     = "my-project"
   environment = "production"
   domain      = "example.com"
